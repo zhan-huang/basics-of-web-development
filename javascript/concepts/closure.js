@@ -1,4 +1,4 @@
-// create a function returning another function
+// when a scope is created, a closure will be created with the associated var
 function add(x) {
   return function(y) {
     return x + y
@@ -7,7 +7,7 @@ function add(x) {
 var add5 = add(5)
 console.log(add5(3))
 
-// an example of the creation of a closure when a scope is created
+// a scope/closure may be created asynchronously with the same var
 for (var i = 0; i < 10; i++) {
   setTimeout(function() {console.log(i)}, 100)
 }

@@ -1,4 +1,4 @@
-// used to bind class instance
+// when a function is called with new, 'this' is used to bind the arguments to instance props
 function Person(name, age) {
   this.name = name
   this.age = age
@@ -7,7 +7,7 @@ function Person(name, age) {
 var tom = new Person('Tom', '32')
 console.log(tom.name + ':' + tom.age)
 
-// used to refer to the object calling the function
+// when a function is called by a class instance/object, 'this' is used to bind the arguments to the props
 var person = {
   name: 'Tom',
   age: '32',

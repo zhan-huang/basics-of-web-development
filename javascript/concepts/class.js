@@ -6,15 +6,17 @@ function Cat(name, age = 0) {
 }
 var tom = new Cat('Tom', 10)
 
-// define two methods of Cat
+// define a method of Cat via prototype
 Cat.prototype.sayHello = function() {
   console.log('Hello I am', this.name)
 }
 tom.sayHello()
 
+// define a method and bind it to a class instance
 function saySth(text) {
   console.log(this.name, ':', text)
 }
+// three ways of binding a method to a class instance
 saySth.apply(tom, ['I want to eat'])
 saySth.call(tom, 'I want to drink')
 saySth.bind(tom, 'I want to sleep')()
