@@ -1,4 +1,4 @@
-// when a function is called with new, 'this' is used to bind the arguments to instance props
+// when a function is called with new, 'this' is used to bind the arguments to the instance props
 function Person(name, age) {
   this.name = name
   this.age = age

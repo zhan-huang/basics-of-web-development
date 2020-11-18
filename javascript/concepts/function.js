@@ -26,7 +26,7 @@ function f5(a, ...b) {
 }
 f5(1, 2, 3, 4, 5)
 
-// this is treated differently in the regular and arrow functions
+// 'this' is treated differently in the regular and arrow functions
 var person = {
   name: 'Tom',
   age: 32,

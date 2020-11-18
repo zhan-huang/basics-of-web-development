@@ -1,4 +1,4 @@
-// var is function scope (will be hoisted on top), while let is block scope
+// var is in function scope (will be hoisted on top), while let is in block scope
 function f() {
   console.log(a)
   var a = 0
@@ -15,7 +15,7 @@ function f2() {
 }
 f2()
 
-// var will be rewriten in the same function scope
+// var will be rewriten if in the same scope
 function f3() {
   var b = 0
   if (true) {

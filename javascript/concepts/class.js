@@ -1,4 +1,4 @@
-// create a Cat class using a function
+// create a class using a function
 function Cat(name, age = 0) {
   this.name = name
   this.age = age
@@ -6,7 +6,7 @@ function Cat(name, age = 0) {
 }
 var tom = new Cat('Tom', 10)
 
-// define a method of Cat via prototype
+// define a class method via prototype
 Cat.prototype.sayHello = function() {
   console.log('Hello I am', this.name)
 }
@@ -21,7 +21,7 @@ saySth.apply(tom, ['I want to eat'])
 saySth.call(tom, 'I want to drink')
 saySth.bind(tom, 'I want to sleep')()
 
-// create a Dog class using class keyword
+// create a class using class keyword
 class Kitten extends Cat {
   constructor(name, badge, age) {
     super(name, age)
