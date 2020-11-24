@@ -3,6 +3,7 @@ function Cat(name, age = 0) {
   this.name = name
   this.age = age
   console.log('A cat with name', this.name, 'and age', this.age, 'is created')
+  this.saySth = saySth
 }
 var tom = new Cat('Tom', 10)
 
@@ -16,7 +17,8 @@ tom.sayHello()
 function saySth(text) {
   console.log(this.name, ':', text)
 }
-// three ways of binding a method to a class instance
+// four ways of binding a method to a class instance
+tom.saySth('I want to play')
 saySth.apply(tom, ['I want to eat'])
 saySth.call(tom, 'I want to drink')
 saySth.bind(tom, 'I want to sleep')()
