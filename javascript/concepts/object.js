@@ -7,3 +7,6 @@ var person = {
 // destructuring assignment with default value
 var { name: n } = person
 console.log(n)
+
+// merge objects
+console.log(Object.assign({ name: 'Jack', nickname: 'Jacky' }, person))
