@@ -10,3 +10,7 @@ console.log(a, b)
 console.log(...arr)
 arr = [...arr, 5, 6, 7]
 console.log(...arr)
+
+// splice method
+console.log(arr.splice(1, 2, 0, 0))
+console.log(arr)
