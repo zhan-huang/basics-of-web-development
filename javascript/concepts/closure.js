@@ -17,5 +17,5 @@ for (let i = 0; i < 10; i++) {
 for (var i = 0; i < 10; i++) {
   (function(j = i) {
     setTimeout(function() {console.log(j)}, 100);
-  })()
+  })();
 }
