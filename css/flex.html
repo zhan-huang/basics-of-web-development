@@ -1,0 +1,97 @@
+<head>
+  <style>
+    .flex-container {
+      display: flex;
+      margin: 16px 0;
+      width: 512px;
+      color: white;
+    }
+    .rect {
+      width: 20%;
+    }
+    .rect.red {
+      height: 32px;
+      background-color: red;
+    }
+    .rect.green {
+      height: 128px;
+      background-color: green;
+    }
+    .rect.blue {
+      height: 64px;
+      background-color: blue;
+    }
+
+    #container-2 {
+      flex-direction: row-reverse;
+    }
+
+    #container-3 {
+      flex-direction: column;
+    }
+
+    #container-4 {
+      flex-direction: column-reverse;
+    }
+
+    #container-6 {
+      flex-wrap: wrap;
+    }
+
+    #container-7 {
+      flex-wrap: wrap-reverse;
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-container" id="container-1">
+    <div class="rect red">Red</div>
+    <div class="rect green">Green</div>
+    <div class="rect blue">Blue</div>
+  </div>
+
+  <div class="flex-container" id="container-2">
+    <div class="rect red">Red</div>
+    <div class="rect green">Green</div>
+    <div class="rect blue">Blue</div>
+  </div>
+
+  <div class="flex-container" id="container-3">
+    <div class="rect red">Red</div>
+    <div class="rect green">Green</div>
+    <div class="rect blue">Blue</div>
+  </div>
+
+  <div class="flex-container" id="container-4">
+    <div class="rect red">Red</div>
+    <div class="rect green">Green</div>
+    <div class="rect blue">Blue</div>
+  </div>
+
+  <div class="flex-container" id="container-5">
+    <div class="rect red">Red</div>
+    <div class="rect green">Green</div>
+    <div class="rect blue">Blue</div>
+    <div class="rect red">Red</div>
+    <div class="rect green">Green</div>
+    <div class="rect blue">Blue</div>
+  </div>
+
+  <div class="flex-container" id="container-6">
+    <div class="rect red">Red</div>
+    <div class="rect green">Green</div>
+    <div class="rect blue">Blue</div>
+    <div class="rect red">Red</div>
+    <div class="rect green">Green</div>
+    <div class="rect blue">Blue</div>
+  </div>
+
+  <div class="flex-container" id="container-7">
+    <div class="rect red">Red</div>
+    <div class="rect green">Green</div>
+    <div class="rect blue">Blue</div>
+    <div class="rect red">Red</div>
+    <div class="rect green">Green</div>
+    <div class="rect blue">Blue</div>
+  </div>
+</body>
