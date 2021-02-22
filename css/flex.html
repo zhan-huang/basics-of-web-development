@@ -41,7 +41,8 @@
     #container-7 {
       flex-wrap: wrap-reverse;
     }
-
+    
+    /* divide remaining room */
     #container-8 .red {
       flex-grow: 0;
     }
@@ -52,6 +53,7 @@
       flex-grow: 0;
     }
 
+    /* absurb over room */
     #container-9 {
       width: 256px;
     }
@@ -63,6 +65,11 @@
     }
     #container-9 .blue {
       flex-shrink: 2;
+    }
+
+    /* overwrite width */
+    #container-10 .blue {
+      flex-basis: 160px;
     }
   </style>
 </head>
@@ -125,6 +132,12 @@
   </div>
 
   <div class="flex-container" id="container-9">
+    <div class="rect red">Red</div>
+    <div class="rect green">Green</div>
+    <div class="rect blue">Blue</div>
+  </div>
+
+  <div class="flex-container" id="container-10">
     <div class="rect red">Red</div>
     <div class="rect green">Green</div>
     <div class="rect blue">Blue</div>
