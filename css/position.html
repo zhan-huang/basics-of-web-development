@@ -1,0 +1,46 @@
+<head>
+  <style>
+    .box {
+      width: 512px;
+      height: 512px;
+      border: thin solid black;
+    }
+    #box1 {
+      position: static;
+    }
+    #box2 {
+      position: relative;
+      top: 32px;
+    }
+    #box3 {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 128px;
+      height: 128px;
+    }
+    #box4 {
+      position: absolute;
+      top: 32px;
+      left: 32px;
+      width: 128px;
+      height: 128px;
+    }
+    #box5 {
+      position: sticky;
+      position: -webkit-sticky;
+      top: 0;
+      left: 64px;
+      width: 128px;
+      height: 128px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box" id="box5"></div>
+  <div class="box" id="box1"></div>
+  <div class="box" id="box2">
+    <div class="box" id="box4"></div>
+  </div>
+  <div class="box" id="box3"></div>
+</body>
